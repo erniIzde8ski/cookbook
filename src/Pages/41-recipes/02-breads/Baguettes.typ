@@ -37,7 +37,7 @@
     + ADD log seam-side down to greased baking tray or couche.
   + #RI.PREHEAT(
       obj: "oven with pot & cast-iron on bottom rack",
-      spacer: aside,
+      space: none,
       temperature: 450,
     )
   + COVER logs until slightly puffy. #pause[45-60 min.] // TODO: Use King Arthur

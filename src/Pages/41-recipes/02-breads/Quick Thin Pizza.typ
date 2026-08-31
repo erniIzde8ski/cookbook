@@ -31,7 +31,7 @@
 ]
 
 #let sep = v(0.35em)
-+ #RI.PREHEAT(obj: "oven (with pizza stone or steel)", spacer: aside, temperature: 450)
++ #RI.PREHEAT(obj: "oven (with pizza stone or steel)", space: none, temperature: 450)
 + MIX dough in order: water & yeast; oil; remaining ingredients.
 + COVER dough. #pause[25 min.]
 + FLATTEN tiny tiny crust onto parchment paper.

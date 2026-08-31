@@ -2,7 +2,7 @@
 #import "fn.typ" as _fn
 
 
-#let PREHEAT(obj: none, temperature: none, unit: "F", spacer: _fn.pause) = {
+#let PREHEAT(obj: none, temperature: none, unit: "F", space: _fn.pause-spacer) = {
   let nearest-five(n) = calc.round-to-multiple(n, 5)
 
   let (celsius, fahrenheit) = if temperature == none { (none, none) } else if (
@@ -36,7 +36,8 @@
   if obj != none [~#obj]
   if temperature != none [, #celsius°C]
   [.]
-  if temperature != none { spacer[#fahrenheit°F] }
+  if temperature != none { _fn.aside[#fahrenheit°F] }
+  space
 }
 
 #{

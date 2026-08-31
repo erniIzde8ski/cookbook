@@ -19,6 +19,9 @@
     cream: [Americans: #url[Cream], not #url[sour cream]!],
     cumin: [Be VERY careful with cumin. A pinch too much of salt? Salty, but you'll
       survive. A pinch too much of cumin? Completely inedible.],
+    erdi: [I buy this specific dough improver from King Arthur Baking
+      Company:~#[https://shop.kingarthurbaking.com/items/easy-roll-dough-improver]. Adjust
+      hydration if you forgo it.],
     fry-basket: [I recommend a fry basket. I own this
       one:~https://www.amazon.com/dp/B001VZARVK],
     food-processor: [You can technically get away with a blender, but it's a hell of a lot
