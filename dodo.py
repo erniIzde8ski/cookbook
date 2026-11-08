@@ -1,6 +1,7 @@
 import logging
 import os
 import subprocess as sp
+import sys
 from collections.abc import Iterator
 from functools import partial
 from hashlib import sha256
@@ -9,6 +10,8 @@ from shutil import which
 from typing import NamedTuple
 
 import yaml
+
+log = logging.getLogger(__name__)
 
 
 class Version(NamedTuple):
@@ -58,7 +61,7 @@ def _get_tinymist():
         version = Version(*(int(x) for x in version))
 
         if version < MINIMUM_TYPST_VERSION:
-            logging.warning(
+            log.warning(
                 f"Skipping executable: discovered version ({version})"
                 f" is lower than required minimum version ({MINIMUM_TYPST_VERSION})\n"
                 f"  Command: {command}\n"
@@ -67,9 +70,9 @@ def _get_tinymist():
             continue
 
         return command
-    else:
-        print("No valid `tinymist` executable could be found :(")
-        exit(1)
+
+    print("No valid `tinymist` executable could be found :(")
+    sys.exit(1)
 
 
 TINYMIST = _get_tinymist()
