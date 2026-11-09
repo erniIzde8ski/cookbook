@@ -7,36 +7,34 @@
     Hamel:~https://www.kingarthurbaking.com/recipes/super-fast-thin-crust-pizza-dough-recipe
   ],
   panel-width: 40%,
+  yield: [1 large pizza],
 )[
   Dough:
   - 150mℓ water, warm
-  - 5g instant yeast #aside[8mℓ]
-  - 40g olive oil #aside[45mℓ]
-  - 200g all-purpose flour #footnote[~00 Pizza Flour should, theoretically, provide better
-      results. Bread flour is OK, but not advisable; produces a chewy pizza.]
-    #aside[380mℓ]
-  - 40g einkorn flour #aside[76mℓ]
-  - 3g salt #aside[2mℓ]
+  - 8g instant dry yeast #pause[10mℓ]
+  - 35g olive oil #pause[37mℓ]
   - 3mℓ basil, dried
   - 3mℓ oregano, dried
   - 3mℓ marjoram, dried
-  - 4g baking powder #aside[5mℓ] // Also (cont.) we're missing weights lol.
+  - 5--7g salt #aside[4--6mℓ]
+  - 6g Easy Roll Dough Improver #aside[optional]
+  - 40g einkorn flour #aside[80mL]
+  - 200g all-purpose flour #footnote[~00 Pizza Flour should, theoretically, provide better
+      results. Bread flour is OK, but not advisable; produces a chewy pizza.]
+    #aside[395mL]
 
 
   Recommended toppings:
   - Tomato sauce
   - Shredded mozzarella
   - Turkey pepperoni
-
-  *Yields 1 pizza.*
 ]
 
 #let sep = v(0.35em)
++ #RI.PREHEAT(obj: "oven (with pizza stone or steel)", spacer: aside, temperature: 450)
 + MIX dough in order: water & yeast; oil; remaining ingredients.
-+ COVER dough and rest. #pause[20 min.]
-+ PREHEAT oven to 225°C. #aside[450°F] #pause[10 min.]
-+ FLATTEN into crust on baking tray. Should be 1/2 to 1 cm. tall.
-+ BAKE until cooked throughout. #pause[10-12 min.]
-+ REMOVE from oven and add toppings.
-+ BAKE until cheese browns. #pause[6-8 min.]
++ COVER dough. #pause[25 min.]
++ FLATTEN tiny tiny crust onto parchment paper.
++ ADD toppings to crust.
++ BAKE with paper set directly atop pizza stone. #pause[9-12 min.]
 + REST before cutting. #pause[3 min.]
