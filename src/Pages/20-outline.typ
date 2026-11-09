@@ -2,6 +2,6 @@
 
 #{
   v(2em)
-  outline(title: none)
+  [#outline(title: none) <outline>]
   pagebreak(weak: true)
 }

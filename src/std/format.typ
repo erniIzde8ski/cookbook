@@ -112,7 +112,7 @@
       }
     }
     set text(size: text-size)
-    it
+    link(<outline>, it)
   }
   show heading.where(level: 4): set heading(outlined: false)
   show heading.where(level: 5): set heading(outlined: false)
@@ -142,6 +142,10 @@
     [ (#ref(it.citation.key, form: "page"))]
   }
   show link: it => {
+    if it.dest == <outline> {
+      return it
+    }
+
     let color = uri-default
     let _underline = false
 
