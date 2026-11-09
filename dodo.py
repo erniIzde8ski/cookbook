@@ -61,7 +61,7 @@ MINIMUM_TYPST_VERSION = Version(0, 15)
 
 TYPST_ROOT = Path("src")
 VARIANT_DIRECTORY = TYPST_ROOT / "variants"
-TARGET_DIRECTORY = Path("target")
+TARGET = Path("target")
 
 
 TYPST_SOURCES = set(TYPST_ROOT.rglob("*.typ"))
@@ -207,23 +207,28 @@ def task_build_indices() -> TaskGenerator:
 
 def task_compile():
     libs = list(LIBRARIES)
+    modes = tuple(TARGET / mode for mode in ("debug", "release"))
     for variant in VARIANTS:
         name = variant.name.removesuffix(variant.suffix)
-        target = TARGET_DIRECTORY / (name + ".pdf")
-        yield {
-            "name": name,
-            "actions": [
-                cmdaction(
-                    TINYMIST,
-                    "compile",
-                    "--save-lock",
-                    "--root",
-                    "src/",
-                    "--",
-                    variant,
-                    target,
-                )
-            ],
-            "file_dep": [variant] + libs,
-            "targets": (target,),
-        }
+        for mode in modes:
+            target_file = TARGET / mode / name
+            task = Subtask(
+                name=f"{mode.name}/{name}",
+                actions=[
+                    cmdaction(
+                        TINYMIST,
+                        "compile",
+                        "--save-lock",
+                        "--root=src",
+                        "--input",
+                        f"{mode=!s}",
+                        "--",
+                        variant,
+                    )
+                ],
+                file_dep=[variant] + libs,
+                targets=[target_file],
+            )
+            if mode.name == "release":
+                task["uptodate"] = [True]
+            yield task
