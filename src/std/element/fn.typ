@@ -1,4 +1,5 @@
 #import "../palette.typ": *
+#import "/config.typ": debug-mode
 
 #let _super = super
 #let _no-op(val) = val
@@ -8,7 +9,7 @@
 /// - thing (any): name of thing needed
 /// - super (bool): render using superscript
 /// -> content
-#let missing(thing, super: true) = {
+#let missing(thing, super: true) = if debug-mode {
   let thing = [[#thing needed]]
   if super { thing = _super(thing) }
 
