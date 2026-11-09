@@ -20,7 +20,7 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v6.2.0
         with:
-          python-version: 3.14
+          python-version: 3.15
       - name: Setup Python virtual environment
         run: |
           python3 -m pip install -U pip
@@ -37,4 +37,4 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            target/*.pdf
+            target/debug/*.pdf
