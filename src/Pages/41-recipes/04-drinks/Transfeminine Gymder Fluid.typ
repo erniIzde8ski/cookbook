@@ -48,7 +48,7 @@
       let elem-mass_d = smartround-grams(elem-raw-ratio)
       fn({
         [This makes for about #elem-mass_d of #element (#raw-mass_d raw substance) per
-          liter, and assuming \~#elem-mass_d of #element per gram of #raw-form.]
+          liter, assumingly roughly #elem-mass_d of #element per gram of #raw-form.]
         if product != none [\ Referenced product: #product]
       })
     }
