@@ -2,12 +2,15 @@
 name = "cookbook-2"
 version = "1.0.0"
 dependencies = [
-    "cyclopts>=4.19.0",
+    "cyclopts>=5.4.0",
     "doit>=0.37.0",
     "evilutils>=0.2.0",
     "pyyaml>=6.0.3",
 ]
 requires-python = ">=3.15"
+
+[dependency-groups]
+dev = ["basedpyright>=1.40.2"]
 
 [tool.ruff]
 line-length = 90
@@ -20,11 +23,18 @@ skip-magic-trailing-comma = true
 [tool.ruff.lint.isort]
 force-single-line = true
 
+[tool.ruff.lint.per-file-ignores]
+"**/*.pyi" = []
+
 [tool.isort]
 profile = "black"
 line_length = 90
 force_single_line = true
 
 [tool.basedpyright]
-reportImplicitStringConcatenation = false
 pythonVersion = "3.15"
+reportImplicitStringConcatenation = false
+
+[[tool.basedpyright.executionEnvironments]]
+root = "typings/"
+reportExplicitAny = false
