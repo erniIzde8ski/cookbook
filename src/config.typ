@@ -10,3 +10,6 @@
   }
 }
 #let debug-mode = not release-mode
+
+#let author = if release-mode { "Ernie Izdebski" } else { "Erni Izdebski" }
+#let title = "Cookbook 2"

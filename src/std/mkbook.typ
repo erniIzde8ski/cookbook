@@ -1,3 +1,5 @@
+#import "/config.typ"
+
 // TODO: Add section headers
 #let mkpgheader(gap: 0.5em) = none
 
@@ -25,7 +27,13 @@
   let (l, r) = if calc.rem-euclid(page-no, 2) == 0 {
     (page-display, [#format-date(datetime.today())])
   } else {
-    (quote(document.title), page-display)
+    (
+      {
+        quote(document.title)
+        if config.debug-mode [~(dev copy)]
+      },
+      page-display,
+    )
   }
 
   columns(2, {
@@ -36,7 +44,7 @@
 }
 
 #let mkbook(
-  title: "Cookbook 2",
+  title: config.title,
   page-size: "us-letter",
   page-header: true,
   page-footer: true,
@@ -44,8 +52,8 @@
   import "./format.typ": format-document
 
   set document(
-    author: "Ernie Izdebski",
-    title: "Cookbook 2",
+    author: config.author,
+    title: config.title,
   )
 
   set page(
