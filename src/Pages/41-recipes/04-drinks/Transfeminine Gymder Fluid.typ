@@ -1,4 +1,5 @@
 #import "/prelude.typ": *
+#import "/config.typ": debug-mode, release-mode
 
 #let SERVINGS = 263
 
@@ -28,7 +29,7 @@
     raw-form,
     elem-mg-per-fluid-mℓ,
     elem-mg-per-raw-mg,
-    include-footnote: true,
+    include-footnote: debug-mode,
     product: none,
   ) = {
     // element (g) versus fluid (ℓ)
@@ -101,8 +102,10 @@
   (z.numerator / z.denominator) / 1000
 }
 
+
+
 #Recipe(
-  title: "Transfeminine Gymder Fluid",
+  title: if release-mode { "The Energy Drink" } else { "Transfeminine Gymder Fluid" },
   description: [A potassium-free energy drink formulation. Inspired by Electrolit, Green
     Apple flavor.],
   yield: [#SERVINGS liters\
@@ -122,10 +125,13 @@
 ]
 
 == Trivia
-Transgender women often take the anti-androgen spironolactone, which also acts as a
-potassium-preserving diuretic. Essentially, electrolytes go into body, potassium stays in,
-everything else gets flushed out. For gymgoers, an energy drink that does not feature
-potassium can thus prove very helpful.
+
+#if debug-mode [
+  Transgender women often take the anti-androgen spironolactone, which also acts as a
+  potassium-preserving diuretic. Essentially, electrolytes go into body, potassium stays
+  in, everything else gets flushed out. For gymgoers, an energy drink that does not
+  feature potassium can thus prove very helpful.
+]
 
 #let safetyLimit = 15
 #let sucraloseGrams = 47.7
@@ -138,5 +144,7 @@ you should consume no more than $(weightEstimate times safetyLimit)/sucraloseGra
 = #{ calc.round(weightEstimate * safetyLimit / sucraloseGrams, digits: 1) }#[~] frac("L", "day", style: "skewed")$
 of this stuff a day on average.
 
-Neither this recipe nor any claims made herein have been reviewed by the FDA or any other
-health organizations; you prepare this product at your own risk.
+#if release-mode [
+  Neither this recipe nor any claims made herein have been reviewed by the FDA or any
+  other health organizations; you prepare this product at your own risk.
+]

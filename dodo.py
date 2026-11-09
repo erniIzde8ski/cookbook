@@ -207,13 +207,13 @@ def task_build_indices() -> TaskGenerator:
 
 def task_compile():
     libs = list(LIBRARIES)
-    modes = tuple(TARGET / mode for mode in ("debug", "release"))
+    modes = ("debug", "release")
     for variant in VARIANTS:
         name = variant.name.removesuffix(variant.suffix)
         for mode in modes:
-            target_file = TARGET / mode / name
+            target_file = TARGET / mode / (name + ".pdf")
             task = Subtask(
-                name=f"{mode.name}/{name}",
+                name=f"{mode}/{name}",
                 actions=[
                     cmdaction(
                         TINYMIST,
@@ -224,11 +224,12 @@ def task_compile():
                         f"{mode=!s}",
                         "--",
                         variant,
+                        target_file,
                     )
                 ],
                 file_dep=[variant] + libs,
                 targets=[target_file],
             )
-            if mode.name == "release":
+            if mode == "release":
                 task["uptodate"] = [True]
             yield task
