@@ -11,7 +11,7 @@
 )[
   Dough:
   - 150mℓ water, warm
-  - 8g instant dry yeast #pause[10mℓ]
+  - 8g active dry yeast #pause[10mℓ]
   - 35g olive oil #pause[37mℓ]
   - 3mℓ basil, dried
   - 3mℓ oregano, dried
