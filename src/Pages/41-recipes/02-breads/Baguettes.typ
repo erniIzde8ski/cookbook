@@ -10,26 +10,24 @@
   - EITHER: 200mg instant yeast #aside[350µℓ] \
     OR: 25g sourdough starter #aside[15mℓ]
   - 120g all-purpose flour #aside[230mℓ]
+  - 5g Easy Roll Dough Improver #aside[optional]
 
   Dough:
-  - 255mℓ water
   - Pre-ferment (above)
+  - 255mℓ water
   - 5g instant yeast #aside[7mℓ]
   - 420g all-purpose flour #aside[800mℓ]
   - 12g salt #aside[9mℓ]
-  - 2g basil, dried #aside[10mℓ]
-  // TODO: try rosemary
 ][
   + MIX pre-ferment ingredients roughly.
   + COVER at room temperature. #pause[12-16 hr.]
-  + ADD ingredients to stand mixer in listed order.
-  + MIX using dough hook 4 minutes on medium-low speed.#footnote[Speed 2 with a
-      KitchenAid.]
-  + COVER in greased bowl. #pause[45 min.]
-  + DEFLATE dough.
-  + REST covered. #pause[45 min.]
-  + SLICE dough on greased surface into 2-4 equal portions.
-  + FOR each portion:
+  + ADD ingredients to bowl in listed order.
+  + MIX thoroughly. #footnote[With a KitchenAid stand mixer, \~4 minutes on speed 2.]
+  + TWICE:~
+    + COVER in greased bowl. #pause[45 min.]
+    + DEFLATE.
+  + SLICE dough on greased surface into 2-4 equal parts.
+  + FOR each part:~
     + FLATTEN slightly.
     + FOLD in half.
     + ROTATE 180°.
@@ -37,17 +35,21 @@
     + ROLL into log.#footnote[For 2-3 baguettes, I recommend 40cm logs. For 4
         demi-baguettes, 20cm.]
     + ADD log seam-side down to greased baking tray or couche.
+  + #RI.PREHEAT(
+      obj: "oven with pot & cast-iron on bottom rack",
+      spacer: aside,
+      temperature: 450,
+    )
   + COVER logs until slightly puffy. #pause[45-60 min.] // TODO: Use King Arthur
   // Baking's term "marshmallowy", and add a glossary/glossary entry
-  + PREHEAT oven to 230°C, with cast-iron pot on bottom rack. #pause[450°F; 15-30 min.]
   + BOIL 350mℓ of water. #aside[async.]
   + SCORE loaves.
   + ADD loaves to middle rack of oven, then boiling water to cast-iron pot.
   + BAKE until deeply golden-brown. #pause[24-28 min.]
-  + IF making crispy baguettes:
-    + HALT oven.
+  + STOP oven.
+  + IF making crispy baguettes:~
     + OPEN oven slightly ajar. #aside[\~5cm]
-    + REST until baguettes are room temperature.
-    ELSE:
+    + WAIT until baguettes are room temperature. #missing[duration]
+    ELSE:~
     + COOL on wire rack.
 ]
