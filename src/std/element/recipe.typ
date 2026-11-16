@@ -1,3 +1,4 @@
+#import "/ext.typ": meander
 #import "../palette.typ": *
 #let Label = label
 #let _recipe(
@@ -10,8 +11,6 @@
   steps,
   refs,
 ) = {
-  import "@preview/meander:0.4.2"
-
   show regex("^.+:$"): text.with(weight: "semibold")
   let box = box.with(stroke: 0.05em + gray, inset: 0.5em, radius: 0.5em)
 

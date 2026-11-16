@@ -1,6 +1,9 @@
-#import "@preview/oxifmt:1.0.0": strfmt as format
-
+#let format = {
+  import "/ext.typ": oxifmt
+  oxifmt.strfmt
+}
 #let fmt = format
+
 
 #let format-date(date) = fmt(
   "{year:<04}-{month:<02}-{day:<02}",
@@ -8,6 +11,7 @@
   month: date.month(),
   day: date.day(),
 )
+
 
 #let format-document(
   page-size: "us-letter",

@@ -20,13 +20,17 @@
     )
 )
 
+
 /// Determines if an object appears to be a non-empty & non-zero value.
 ///
 /// - obj (any): object to check
 /// -> bool: truthiness of the `obj`
 #let is-truthy(obj) = not is-falsy(obj)
 
+
 #let supports-numbering(it) = type(it) == content and it.func() != bibliography
+
+
 #let has-numbering(it) = supports-numbering(it) and it.numbering != none
 
 #assert(not has-numbering(none))

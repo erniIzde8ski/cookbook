@@ -1,5 +1,6 @@
 #import "../palette.typ": *
 #import "/config.typ": debug-mode
+#import "/ext.typ"
 
 #let _super = super
 #let _no-op(val) = val
@@ -21,7 +22,7 @@
 #let semibold = text.with(weight: "semibold")
 
 #let checklist = {
-  import "@preview/cheq:0.4.0": *
+  import ext.cheq: *
 
   let marker = text.with(baseline: -0.1em)
 
@@ -35,7 +36,7 @@
 }
 
 #let mdtable = {
-  import "@preview/tablem:0.3.0": three-line-table
+  import ext.tablem: three-line-table
   three-line-table.with(fill: (_, y) => if calc.odd(y) { pale-blue })
 }
 

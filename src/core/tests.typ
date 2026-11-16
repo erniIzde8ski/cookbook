@@ -1,5 +1,7 @@
-#let assert-eq(left, right) = {
-  import "@preview/oxifmt:1.0.0": strfmt as format
+#import "/ext.typ"
 
-  assert(left == right, message: format("assertion failed: {:?} == {:?}", left, right))
+#let assert-eq(left, right) = {
+  import ext.oxifmt: strfmt
+
+  assert(left == right, message: strfmt("assertion failed: {:?} == {:?}", left, right))
 }

@@ -1,4 +1,5 @@
 #let _I = sys.inputs
+
 #let release-mode = {
   let val = _I.at("mode", default: "debug")
   if val == "release" { true } else if val == "debug" { false } else {

@@ -1,4 +1,3 @@
-
 #let from-diagonal-length(
   diagonal-length,
   pixel-height,

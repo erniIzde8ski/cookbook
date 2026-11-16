@@ -6,11 +6,12 @@
   type(val) in (int, float, decimal, ratio)
     or (type(val) == str and val.matches(regex(`^\d+(\.\d+)?$`.text)) != none)
 )
-
 #assert(__is-numeric("1.15"))
+
 
 #let __simplify-decimal(dec) = decimal(str(dec).trim(regex(`\.0*$`.text), repeat: false))
 #assert(__simplify-decimal(1600) == decimal("1600"))
+
 
 /// Simplify a Zlomek.
 ///
@@ -53,6 +54,7 @@
   (numerator: int(ni), denominator: int(di))
 }
 #simplify((numerator: decimal("1.15"), denominator: decimal("16")))
+
 
 /// Construct a new Zlomek instance.
 ///
@@ -101,11 +103,13 @@
 
 #assert(new(("1.5", "4.5")) == (numerator: decimal(1), denominator: decimal(3)))
 
+
 #let neg(zlomek) = {
   let zlomek = new(zlomek)
   return new((-1 * zlomek.numerator, zlomek.denominator))
 }
 #assert(neg(-2) == (numerator: 2, denominator: 1))
+
 
 #let add(augend, addend) = {
   let augend = new(augend)
@@ -119,15 +123,19 @@
 }
 #assert(add((1, 2), (1, 3)) == (numerator: 5, denominator: 6))
 
+
 #let sub(minuend, subtrahend) = add(minuend, neg(subtrahend))
 
+
 #let sum(..args) = args.pos().reduce(add)
+
 
 #let inverse(zlomek) = {
   let z = new(zlomek)
   new((z.denominator, z.numerator))
 }
 #let inv = inverse
+
 
 /// - left (dictionary): a zlomek
 /// - right (dictionary): a zlomek
@@ -139,6 +147,7 @@
 }
 #assert(mult((1, 3), (1, 3)) == (numerator: 1, denominator: 9))
 
+
 #let divide(dividend, divisor) = {
   let dividend = new(dividend)
   let divisor = new(divisor)
@@ -147,6 +156,7 @@
 }
 #let div = divide
 #assert(divide(1, 3) == (numerator: 1, denominator: 3))
+
 
 #let prod(..args) = args.pos().reduce(mult)
 #assert(prod((1, 2), (3, 4), (5, 6)) == new((15, 48)))

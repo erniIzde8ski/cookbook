@@ -1,7 +1,9 @@
 #import "/config.typ"
 
+
 // TODO: Add section headers
 #let mkpgheader(gap: 0.5em) = none
+
 
 #let mkpgfooter(gap: 0.5em) = context {
   let page-display = counter(page).display("1 of 1", both: true)
@@ -42,6 +44,7 @@
     align(right, r)
   })
 }
+
 
 #let mkbook(
   title: config.title,

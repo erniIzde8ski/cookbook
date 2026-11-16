@@ -1,6 +1,6 @@
-#import "utils.typ"
 #import "String.typ"
 #import "uri.typ"
+#import "utils.typ"
 
 
 #let normalize-key(key) = {
