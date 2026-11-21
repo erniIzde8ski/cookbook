@@ -1,6 +1,18 @@
 #import "/prelude.typ": *
 
-#Recipe(title: "Baked Mac 'n Cheese", yield: "2.5+ ℓ")[
+#Recipe(
+  title: "Baked Mac 'n Cheese",
+  yield: "2.5+ ℓ\n(potluck proportions)",
+  refs: (
+    <R_nacho-cheese>,
+    <KABC_CHART>,
+    <jlc_sodium-citrate-mac-cheese>,
+    <mc_mac-and-cheese-recipe>,
+    <mcc_mac-and-cheese-dijon-mustard>,
+    <wh_panko-breadcrumbs>,
+    <wls_smoky-mac-cheese>,
+  ),
+)[
   Pasta:
   - 6g salt@ss_pasta-salinity
   - 600g macaroni or shells, dry
@@ -31,13 +43,3 @@
   + BAKE. #pause[20-25 min]
   + REST outside oven. #pause[5-7 min.]
 ]
-
-== References
-
-- @R_nacho-cheese
-- https://www.kingarthurbaking.com/learn/ingredient-weight-chart
-- https://justlovecooking.com/sodium-citrate-mac-and-cheese-recipe/
-- https://modernistcuisine.com/wp-content/uploads/2012/10/Mac-and-Cheese-recipe.jpg
-- https://wrightsliquidsmoke.com/recipe/smoky-mac-and-cheese/
-- https://www.mccormick.com/blogs/frenchs-recipes/mac-and-cheese-with-dijon-mustard
-// TODO: - https://www.wikihow.com/Make-Panko-Bread-Crumbs

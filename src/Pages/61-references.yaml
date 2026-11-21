@@ -179,6 +179,23 @@ hos2_allspice:
   page-range: 64-66
   parent: *hos2
 
+JUST_LOVE_COOKING: &jlc
+  type: Blog
+  title: "Just Love Cooking"
+  publisher: Just Love Cooking
+  author: Cutler, Louise
+  url: https://justlovecooking.com
+
+jlc_sodium-citrate-mac-cheese:
+  type: Article
+  title: "Sodium Citrate Mac and Cheese Recipe – The SECRET to Perfectly Creamy Mac!"
+  author: Cutler, Louise
+  date: 2025-11-28
+  url:
+    value: https://justlovecooking.com/sodium-citrate-mac-and-cheese-recipe/
+    date: 2026-11-20
+  parent: *jlc
+
 kis:
   type: post
   title: Dulce de Leche
@@ -239,6 +256,38 @@ ms_cake-flour-vs-apf:
     value: https://www.marthastewart.com/cake-flour-vs-all-purpose-flour-8612786
     date: 2026-04-08
   parent: *ms
+
+MCCORMICK: &mcc
+  type: Newspaper
+  title: "McCormick"
+  publisher: McCormick
+  url: https://www.mccormick.com
+
+mcc_mac-and-cheese-dijon-mustard:
+  type: Article
+  title: "Mac and Cheese with Dijon Mustard"
+  author: Menon, Rachel
+  publisher: McCormick
+  url:
+    value: https://www.mccormick.com/blogs/frenchs-recipes/mac-and-cheese-with-dijon-mustard
+    date: 2026-11-20
+  parent: *mcc
+
+MODERNIST_CUISINE: &mc
+  type: Newspaper
+  title: "Modernist Cuisine"
+  publisher: Modernist Cuisine
+  url: https://modernistcuisine.com
+
+mc_mac-and-cheese-recipe:
+  type: Web
+  title: "Mac-and-Cheese recipe"
+  publisher: Modernist Cuisine
+  date: 2012-10-18
+  url:
+    value: https://modernistcuisine.com/wp-content/uploads/2012/10/Mac-and-Cheese-recipe.jpg
+    date: 2026-11-20
+  parent: *mc
 
 md-dulce-de-leche:
   type: post
@@ -400,3 +449,18 @@ wp-flour:
     value: https://en.wikipedia.org/wiki/Flour
     date: 2026-04-17
   parent: *wp
+
+WRIGHTS_LIQUID_SMOKE: &wls
+  type: Web
+  title: "Wright's Liquid Smoke"
+  publisher: Wright's Liquid Smoke
+  url: https://wrightsliquidsmoke.com
+
+wls_smoky-mac-cheese:
+  type: Web
+  title: "Smoky Mac and Cheese"
+  publisher: Wright's Liquid Smoke
+  url:
+    value: https://wrightsliquidsmoke.com/recipe/smoky-mac-and-cheese/
+    date: 2026-11-20
+  parent: *wls
