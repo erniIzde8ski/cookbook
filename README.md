@@ -26,7 +26,7 @@ xi source-sans-pro texlive-core ttf-bitstream-vera twemoji
 
 You will need to set the formatter to `typstyle`, `lineLength=90`, prose
 wrapping, and `/path/to/checkout/src/` base directory. I find it works better
-in neovim, for whatever reason.
+in Neovim than in VSCode, for whatever reason.
 
 Setup:
 
