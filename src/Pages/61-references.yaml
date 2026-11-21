@@ -338,6 +338,20 @@ ss_pasta-salinity:
     date: 2026-04-25
   parent: *ss
 
+TASTES_BETTER_FROM_SCRATCH: &tbfs
+  type: Newspaper
+  title: Tastes Better from Scratch
+  url: https://tastesbetterfromscratch.com
+tbfs_mexican-rice:
+  type: Article
+  title: Authentic Mexican Rice
+  author: Allen, Lauren
+  date: 2024-02-14
+  url:
+    value: https://tastesbetterfromscratch.com/authentic-mexican-rice/
+    date: 2026-08-12
+  parent: *tbfs
+
 TASTE_OF_HOME:
   type: Newspaper
   title: "Taste of Home"

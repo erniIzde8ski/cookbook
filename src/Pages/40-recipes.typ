@@ -26,6 +26,8 @@
 
   show footnote.entry: set text(0.85em)
 
+  show ref: lower
+
   show regex(" ?1/8"): "⅛"
   show regex(" ?1/4"): "¼"
   show regex(" ?1/3"): "⅓"
