@@ -2,22 +2,22 @@
 
 #Recipe(title: "Baked Mac 'n Cheese", yield: "2.5+ ℓ")[
   Pasta:
-  - 6g salt@ss_pasta-salinity
-  - 600g macaroni or shells, dry
-  - 1200mℓ water #aside[5 cups]
+  - 6g salt@ss_pasta-salinity #VN
+  - 600g macaroni or shells, dry #VN
+  - 1200mℓ water
 
   Sauce:
   - 675g milk #aside[3 cups]
   - 450g cheddar, shredded #aside[2 packets]
   - 225g monterey jack, shredded #aside[1 packet]
-  - 40g Dijon mustard (1/4 cup)
-  - 34g sodium citrate
-  - 2.5g chili powder #aside[3/4 tsp.]
-  - 1--2g liquid hickory smoke#Fn.liquid-hickory #aside[1/4--1/2 tsp.]
+  - 40g Dijon mustard #aside[60mL #CN]
+  - 34g sodium citrate #VN
+  - 2.5g chili powder #aside[4mL #CN]
+  - 1--2g liquid hickory smoke#Fn.liquid-hickory #aside[1-2mL #CN]
   - (optional) Yellow food dye
 
   Topping:
-  + 75g @R_panko[panko] #aside[3/4 cup]
+  + 75g @R_panko[panko] #aside[180mL]
   + 42g butter #aside[3 tbsp.]
 ][
   + ASYNCHRONOUSLY:~

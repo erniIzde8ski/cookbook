@@ -1,20 +1,18 @@
 #import "/prelude.typ": *
 
-#show: Recipe.with(title: "Honey Mustard Salmon")[
-  - 15g olive oil #aside[1 tbsp.]
+#show: Recipe(title: "Honey Mustard Salmon", yield: "1 portion")[
+  - 15g olive oil #aside[15mL #CN]
   - 1 fillet salmon
-  - 50g @R_dill-honey-mustard[dill honey mustard] #aside[2 tbsp.]
-  - 750mg marjoram #aside[1/2 tbsp.]
+  - 50g @R_dill-honey-mustard[dill honey mustard] #aside[30mL #CN]
+  - 750mg marjoram #aside[7mL #CN]
   - Salt & black pepper, to taste
-
-  *Yields 1 portion.*
+][
+  + PREHEAT oven, 200°C. #aside[400°F]
+  + COAT baking sheet in olive oil.
+  + MOVE salmon to baking sheet.
+  + COAT with mustard & seasonings.
+  + BAKE until fish flakes easily against fork. #aside[10-12 min.]
 ]
-
-+ PREHEAT oven, 200°C. #aside[400°F]
-+ COVER baking sheet in olive oil.
-+ MOVE salmon to baking sheet.
-+ GLAZE with mustard & seasonings.
-+ BAKE 10-12 minutes. Fish should flake easily when pressed with fork.
 
 == Trivia
 

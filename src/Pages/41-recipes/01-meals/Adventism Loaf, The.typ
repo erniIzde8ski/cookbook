@@ -2,16 +2,16 @@
 
 #show: Recipe(title: "The Adventism Loaf", yield: "1 9\"×5\" loaf")[
   - Cooking oil, to coat pan
-  - Onion, chopped fine #pause[1 medium]
-  - 460g cottage cheese #aside[2 cups]
-  - 140g bread crumbs #aside[1 cup]
+  - #missing[weight] Onion, chopped fine #pause[1 medium]
+  - 460g cottage cheese #aside[500mL]
+  - 140g bread crumbs #aside[250mL]
   - 120g eggs #aside[3 large eggs]
-  - \~5g vegetable seasoning, unsalted #aside[1 tsp.]
-  - 2g salt
-  - 25g soy sauce #aside[2 tbsp.]
-  - 50g chopped nuts #aside[1/2 cup]
+  - \~5g vegetable seasoning, unsalted #aside[5mL]
+  - 2g salt #VN
+  - 25g soy sauce #aside[30mL]
+  - 50g chopped nuts #aside[125mL]
 ][
-  + FRY onions in oil until nearly caramelized. In the meantime...
+  + FRY onions in oil until nearly caramelized. Meanwhile...
   + MIX eggs in bowl.
   + PREHEAT oven to 200°C. #aside[400°F]
   + MIX all on medium until combined. #pause[1-2 min.]
@@ -24,8 +24,11 @@
 
 Originally adapted from "Cottage Cheese Loaf Deluxe". @vcb_loaves[p. 23] #footnote[~This
   SDA-endorsed cookbook FASCINATES me. It quotes Ellen G. White on how "spice and grease"
-  dull intellectual vigor (???). Largely horrific; I mostly like this recipe out of pure
-  nostalgia.] My recipe is largely guesswork due to vague original instructions. "Vegex"
-was presumably a vegetable bouillon brand.#footnote[~Here swapped for chicken bouillon. I
-  lack vegetable bouillon.] The "1/2 cup chopped nuts" probably meant simple kinds, like
+  dull intellectual vigor (???). Largely horrific.] My recipe is largely guesswork due to
+vague original instructions. "Vegex" (here swapped for chicken bouillon) was presumably a
+trademarked vegetable mix. The "1/2 cup chopped nuts" probably meant simple kinds, like
 walnuts or pecans.
+
+I don't actually like this recipe that much---it's fine, just not my taste---but the
+Adventists at potluck LOVE it. My most successful potluck involved two whole loaves,
+entirely gone by the end of potluck.

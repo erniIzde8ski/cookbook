@@ -5,7 +5,7 @@
   - Beef or sausages
   - 1 onion
   - 1 tomato
-  - Salt, to taste#Footnotes.bean-seasoning
+  - Salt, to taste#Footnotes.bean-seasoning #VN
   - 1 pinch cumin
   - Cilantro, to taste
   - 2 tbsp. butter
