@@ -15,6 +15,7 @@
 #import "element/fn.typ": pause-spacer
 #import "element/fn.typ": semibold
 #import "element/fn.typ": semibold as sb
+#import "element/ingredients.typ"
 #import "element/placeholder.typ": Placeholder
 #import "element/recipe.typ": Recipe
 
