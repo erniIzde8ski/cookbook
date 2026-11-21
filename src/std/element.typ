@@ -8,6 +8,7 @@
 #import "element/fn.typ": checklist
 #import "element/fn.typ": checklist
 #import "element/fn.typ": invisible
+#import "element/fn.typ": laside
 #import "element/fn.typ": mdtable
 #import "element/fn.typ": missing
 #import "element/fn.typ": pause

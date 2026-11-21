@@ -13,5 +13,6 @@
 #import "/std/format.typ": format-date
 #import "/std/size-mult.typ"
 #import "/std/utils.typ": is-truthy
+#import "/std/utils.typ": smartround
 
 #import "ext.typ"

@@ -37,3 +37,6 @@
 #assert(not has-numbering(heading(numbering: none)[foo]))
 #heading(numbering: "1.")[foo].func()
 #assert(has-numbering(heading(numbering: "1.")[foo]))
+
+
+#let smartround(f) = calc.round(f, digits: if f < 1 { 2 } else if f < 10 { 1 } else { 0 })

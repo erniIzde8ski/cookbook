@@ -49,12 +49,17 @@
   line(length: 50%)
 }
 
-#let beside(body) = {
+#let beside(body, left: "", right: "", __left: none, __right: none) = {
   set text(style: "italic", weight: 600, size: 0.85em, fill: luma(20%))
+  __left
+  left
   body
+  right
+  __right
 }
 
-#let aside(body, left: "(", right: ")") = beside[~~#left#body#right]
+#let laside = beside.with(left: "(", right: ")", __right: [ ~ ])
+#let aside = beside.with(left: "(", right: ")", __left: [ ~ ])
 
 #let pause-spacer = v(0.50em)
 #let pause(body) = aside(body) + pause-spacer

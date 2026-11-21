@@ -10,7 +10,6 @@
     return it
   }
 }
-#let smartround(f) = calc.round(f, digits: if f < 1 { 2 } else if f < 10 { 1 } else { 0 })
 #let smartround-grams(m) = {
   let m = dezlomek(m)
   if m < 1.0 [#smartround(m * 1000);mg] else [#smartround(m);g]
