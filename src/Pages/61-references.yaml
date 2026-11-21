@@ -194,12 +194,22 @@ KAIR: &kair
   author: KitchenAid
   publisher: Publications International, Ltd.
   page-total: 144
-
 kair_breads:
   type: Chapter
   title: "Yeast Breads and Quick Breads"
   page-range: 64-72
   parent: *kair
+
+lékué-bagels:
+  type: chapter
+  title: "English"
+  chapter: 3
+  page-range: 12-15
+  parent:
+    type: Book
+    title: Bagels
+    publisher: Lékué
+    page-total: 47
 
 MAKE_IT_DOUGH: &mid
   type: Blog
