@@ -9,11 +9,12 @@
     <jlc_sodium-citrate-mac-cheese>,
     <mc_mac-and-cheese-recipe>,
     <mcc_mac-and-cheese-dijon-mustard>,
+    <ss_pasta-salinity>,
     <wls_smoky-mac-cheese>,
   ),
 )[
   Pasta:
-  - 6g salt@ss_pasta-salinity
+  - 18g salt
   - 600g macaroni or shells, dry
   - 1200mℓ water #aside[5 cups]
 
