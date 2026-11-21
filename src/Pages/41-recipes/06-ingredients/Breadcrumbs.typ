@@ -8,6 +8,9 @@
 #Recipe(
   title: "Panko (toasted breadcrumbs)",
   label: "panko",
+  references: (
+    <wh_panko-breadcrumbs>,
+  ),
 )[
   - Bread#footnote[I typically use stale bread here.]
 ][
@@ -19,8 +22,3 @@
   + BAKE on sheet. #pause[20-30 min]
   + COOL on wire rack. #pause[\~1 hr.]
 ]
-
-== References
-
-#set cite(form: "full")
-@wh_panko-breadcrumbs

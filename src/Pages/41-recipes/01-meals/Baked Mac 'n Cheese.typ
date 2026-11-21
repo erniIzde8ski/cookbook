@@ -9,7 +9,6 @@
     <jlc_sodium-citrate-mac-cheese>,
     <mc_mac-and-cheese-recipe>,
     <mcc_mac-and-cheese-dijon-mustard>,
-    <wh_panko-breadcrumbs>,
     <wls_smoky-mac-cheese>,
   ),
 )[
