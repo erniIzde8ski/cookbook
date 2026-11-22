@@ -11,17 +11,19 @@ A cookbook written in Typst. [Downloads updated daily here.](https://github.com/
 - [`uv`](https://docs.astral.sh/uv/getting-started/installation/) (optional)
 - [`tinymist`](https://github.com/Myriad-Dreamin/tinymist) (optional, built
   against Typst v0.15.0 or higher)
-- Fonts:
+- Typefaces:
   - Bitstream Vera Sans
-  - Source Sans Pro
-  - Ysabeau
   - Twemoji
+
+`doit` downloads & caches three more typefaces (Libertinus Serif, Source Sans 3,
+Ysabeau) for you. Some others used (Libertinus Serif, New Computer Modern
+\[Math]) are already bundled by Typst.
 
 On Void Linux:
 
 ```
 xi -u
-xi source-sans-pro texlive-core ttf-bitstream-vera twemoji
+xi texlive-core ttf-bitstream-vera twemoji
 ```
 
 You will need to set the formatter to `typstyle`, `lineLength=90`, prose
