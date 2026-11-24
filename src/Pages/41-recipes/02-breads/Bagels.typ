@@ -2,8 +2,8 @@
 
 #Recipe(title: "Bagels", yield: "6 bagels", refs: <lékué-bagels>)[
   Equipment:
-  - 6 bagel molds#fn[I use the molds made by Lékué & sold by King Arthur Baking
-      Company:~https://shop.kingarthurbaking.com/items/bagel-molds]
+  - 6 bagel molds#fn[I use some Lékué
+      molds:~https://shop.kingarthurbaking.com/items/bagel-molds]
   - Bowl.
   - Oven, supporting up to 200°C.
 
