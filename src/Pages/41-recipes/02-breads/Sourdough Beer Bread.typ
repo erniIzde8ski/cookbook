@@ -25,32 +25,33 @@
     )
 
     // TODO: Would it be easier if we just multiplied by, say, 1.1 to get nice round metric cups?
-    Groups(
+    Groups(..(
       Gear: (
         [[\*] Dutch oven#fn[A bread steel should, hypothetically, also work. Don't own
             one; don't know.]],
         [[\*] Parchment paper],
       ),
       Soaker: (rolled-oats(oat-weight), water-boiling(113)),
-      Dough: (
-        bread-flour(bread-flour-weight),
+      "Dough base": (
         beer-medium(255, display: [beer, medium or dark]),
+        bread-flour(bread-flour-weight),
+        dough-enhancer(grain-weight * 0.02) + [ #CN],
         starter(starter-weight),
         instant-yeast(3),
-        dough-enhancer(grain-weight * 0.02) + [ #CN],
+      ),
+      "The rest": (
         honey(21),
         salt(grain-weight * 0.018),
       ),
-    )
+    ))
   },
 )[
   + COMBINE soaker ingredients in medium-small bowl.
   + COVER and set aside.
-  + MIX in new bowl until well-combined: flour, beer, starter, yeast, and dough enhancer.
+  + MIX dough base in new bowl until well-combined.
     #pause[1-2 min. on medium-low speed]
   + COVER. #pause[30 min.]
-  + MIX soaker & remaining ingredients into dough until combined. #pause[3-4 min. on
-      medium-low speed]
+  + MIX soaker & the rest into dough until combined. #pause[3-4 min. on medium-low speed]
   + COVER. #pause[30 min.]
   + PERFORM one round of stretch & folds.
   + COVER. #pause[30 min.]
